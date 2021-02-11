@@ -249,8 +249,6 @@ namespace EvenMorePizza
                 int Team3 = int.Parse(Parts[2]);
                 int Team4 = int.Parse(Parts[3]);
                 var pizzas = new List<Pizza>();
-             //   var IngMap = new Dictionary<string, int>();
-              //  var NextIngId = 0;
 
                 for (int k = 0; k < PizzaCount; k++)
                 {
@@ -259,18 +257,7 @@ namespace EvenMorePizza
                     var ingCount = int.Parse(Parts[0]);
                     var ingredientsInPizza = new HashSet<string>();
 
-                    for (int i = 1; i <= ingCount; i++)
-                    {
-                        var ing = Parts[i];
-                        //if (!IngMap.ContainsKey(ing))
-                        //    IngMap.Add(ing, NextIngId++);
-
-                        //ingredientsInPizza.Add(IngMap[ing]);
-                        
-                    }
-
                     pizzas.Add(new Pizza(k, ingredientsInPizza, ingCount));
-
                 
                 }
 
